@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web:
+    container_name: app
+    restart: always
+    image: donpandix/php_laravel:8.1
+    volumes:
+      - ./http:/var/www/html
+    ports: 
+      - "80:80"
